@@ -3,6 +3,5 @@ pandas
 numpy
 tqdm
 matplotlib
-seaborn
-scikit-learn
 python-dateutil
+python-dotenv
