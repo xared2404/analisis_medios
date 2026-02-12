@@ -33,6 +33,14 @@ RULES = {
     # Trump
     "donald j trump": "donald trump",
     "president donald trump": "donald trump",
+    
+    # --- Trump variants ---
+    "trump": "donald trump",
+    "donald j trump": "donald trump",
+
+    # --- Party variants ---
+    "democratic": "democrat",
+    "democrats": "democrat",
 
     # Harris (ojo: si luego metes otra Harris, la refinamos
     "harris": "kamala harris",
