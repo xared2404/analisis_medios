@@ -34,13 +34,19 @@ RULES = {
     "donald j trump": "donald trump",
     "president donald trump": "donald trump",
 
-    # Harris (ojo: si luego metes otra Harris, la refinamos)
+    # Harris (ojo: si luego metes otra Harris, la refinamos
     "harris": "kamala harris",
 
+     # Sheinbaum
+    "sheinbaum": "claudia sheinbaum",
+    "claudia sheinbaum pardo": "claudia sheinbaum",
+
+    # AMLO
+    "amlo": "andres manuel lopez obrador",
+    "lopez obrador": "andres manuel lopez obrador",
     # NYT/WaPo strings raros a veces
     "the times": "the new york times",
-    "new york times": "the new york times",
-}
+    "new york times": "the new york times",}
 
 # --- 3) Plural stripping muy conservador ---
 def de_pluralize(s: str) -> str:
