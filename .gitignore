@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+data/raw/*
+data/processed/*
+figures/*
+.DS_Store
