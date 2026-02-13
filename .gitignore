@@ -14,3 +14,7 @@ data/processed/*
 # BI outputs (too large for git)
 data/bi/*.csv
 !data/bi/media_metadata.csv
+data/bi/*.csv
+!data/bi/media_metadata.csv
+!data/bi/hhi_stage3_monthly.csv
+!data/bi/distance_stage3_monthly.csv
