@@ -41,7 +41,10 @@ RULES = {
     # --- Party variants ---
     "democratic": "democrat",
     "democrats": "democrat",
-
+    "democratic party": "democrat",
+    "democrats": "democrat",
+    "republicans": "republican",
+    
     # Harris (ojo: si luego metes otra Harris, la refinamos
     "harris": "kamala harris",
 
@@ -52,11 +55,15 @@ RULES = {
     # AMLO
     "amlo": "andres manuel lopez obrador",
     "lopez obrador": "andres manuel lopez obrador",
+    
     # NYT/WaPo strings raros a veces
     "the times": "the new york times",
     "new york times": "the new york times",}
-
+    "the new york times": "",
+    "new york times": "",
+    
 # --- 3) Plural stripping muy conservador ---
+
 def de_pluralize(s: str) -> str:
     # solo palabras simples: democrats -> democrat, republicans -> republican
     # evita romper "us" o siglas

@@ -123,7 +123,10 @@ for chunk in pd.read_csv(ENTS, chunksize=CHUNK):
     chunk = chunk[chunk["entity_canon"] != ""]
 
     # filtrar medios/agencias con heurística robusta
-    mask_drop = chunk["entity_canon"].map(lambda e: looks_like_media_or_agency(e, media_set, agency_set))
+    mask_drop = (
+        chunk["entity_type"].isin(["ORG","MISC"]) &
+        chunk["entity_canon"].map(lambda e: looks_like_media_or_agency(e, media_set, agency_set))
+    )
     chunk = chunk[~mask_drop]
 
     # deduplicar por URL + entidad canon (una entidad cuenta máximo 1 vez por nota)
