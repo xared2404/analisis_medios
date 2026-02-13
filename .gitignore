@@ -10,3 +10,7 @@ figures/*
 .DS_Store
 data/raw/*
 data/processed/*
+
+# BI outputs (too large for git)
+data/bi/*.csv
+!data/bi/media_metadata.csv
